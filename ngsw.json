@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1615848988333,
+  "timestamp": 1615850760033,
   "index": "/tpa-calc/index.html",
   "assetGroups": [
     {
@@ -13,14 +13,11 @@
       "urls": [
         "/tpa-calc/favicon.ico",
         "/tpa-calc/index.html",
-        "/tpa-calc/main.50910669ec4658944034.js",
+        "/tpa-calc/main.546f94469fa45e395dc9.js",
         "/tpa-calc/manifest.webmanifest",
-        "/tpa-calc/ngsw-worker.js",
         "/tpa-calc/polyfills.a4021de53358bb0fec14.js",
         "/tpa-calc/runtime.e227d1a0e31cbccbf8ec.js",
-        "/tpa-calc/safety-worker.js",
-        "/tpa-calc/styles.09e2c710755c8867a460.css",
-        "/tpa-calc/worker-basic.min.js"
+        "/tpa-calc/styles.09e2c710755c8867a460.css"
       ],
       "patterns": []
     },
@@ -55,15 +52,12 @@
     "/tpa-calc/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "/tpa-calc/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "/tpa-calc/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/tpa-calc/index.html": "e46b690c9336649a59666e7d92615c03c6f12ce9",
-    "/tpa-calc/main.50910669ec4658944034.js": "6bf9842e25fddd6c37a7f6718c998bb70563ee46",
+    "/tpa-calc/index.html": "a5f197a8b398e6cf351a8027f421fcf2bf2a44c7",
+    "/tpa-calc/main.546f94469fa45e395dc9.js": "a057d12a74355943b3750703c8d9afea50ceff32",
     "/tpa-calc/manifest.webmanifest": "4e7780983e35e96153220a15bd8d9865f1d8d792",
-    "/tpa-calc/ngsw-worker.js": "601253069e8f1d4f717e0bd54332587669d68261",
     "/tpa-calc/polyfills.a4021de53358bb0fec14.js": "b47435a9ef2a4829f2f9dfd35599bde3614981b1",
     "/tpa-calc/runtime.e227d1a0e31cbccbf8ec.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
-    "/tpa-calc/safety-worker.js": "f532926317210be6e2679d21748dc44a35389807",
-    "/tpa-calc/styles.09e2c710755c8867a460.css": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
-    "/tpa-calc/worker-basic.min.js": "f532926317210be6e2679d21748dc44a35389807"
+    "/tpa-calc/styles.09e2c710755c8867a460.css": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
   },
   "navigationUrls": [
     {
