@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1615856895093,
+  "timestamp": 1615915374578,
   "index": "/tpa-calc/index.html",
   "assetGroups": [
     {
@@ -30,6 +30,7 @@
         "ignoreVary": true
       },
       "urls": [
+        "/tpa-calc/assets/icons/icon-1024x1024.png",
         "/tpa-calc/assets/icons/icon-128x128.png",
         "/tpa-calc/assets/icons/icon-144x144.png",
         "/tpa-calc/assets/icons/icon-152x152.png",
@@ -37,7 +38,11 @@
         "/tpa-calc/assets/icons/icon-384x384.png",
         "/tpa-calc/assets/icons/icon-512x512.png",
         "/tpa-calc/assets/icons/icon-72x72.png",
-        "/tpa-calc/assets/icons/icon-96x96.png"
+        "/tpa-calc/assets/icons/icon-96x96.png",
+        "/tpa-calc/assets/icons/touch-icon-ipad-152.png",
+        "/tpa-calc/assets/icons/touch-icon-ipad-retina-167.png",
+        "/tpa-calc/assets/icons/touch-icon-iphone-retina-180.png",
+        "/tpa-calc/assets/icons/touch-icon-iphone.png"
       ],
       "patterns": []
     }
@@ -45,6 +50,7 @@
   "dataGroups": [],
   "hashTable": {
     "/tpa-calc/4.98dc883b1fd30b5aa933.js": "35d2dca90d4c3897252effd66edccf6d1dbe0b62",
+    "/tpa-calc/assets/icons/icon-1024x1024.png": "34ffeea8d30cdb5606307d58c4314d3f4af31ea0",
     "/tpa-calc/assets/icons/icon-128x128.png": "0c257bf6ae1cc56f7c893095180cb6a3b831a170",
     "/tpa-calc/assets/icons/icon-144x144.png": "3245304d6ff57a9adffedacad010173861f0cc68",
     "/tpa-calc/assets/icons/icon-152x152.png": "7915cf9defbfe115b6a0b1a07507c899a7a23d18",
@@ -53,8 +59,12 @@
     "/tpa-calc/assets/icons/icon-512x512.png": "6415551622255327e0d4a64837ef8b27d4f40c53",
     "/tpa-calc/assets/icons/icon-72x72.png": "904841cfba40ddbe7175424d88e18f2de6361c4e",
     "/tpa-calc/assets/icons/icon-96x96.png": "1cf499ba524ce765106a664680cda82c3b97125c",
+    "/tpa-calc/assets/icons/touch-icon-ipad-152.png": "2d363ea294c496831987412673469f666a4a0c68",
+    "/tpa-calc/assets/icons/touch-icon-ipad-retina-167.png": "a9e748436f3b5394ee553e60ebf52d4aa1cb17d0",
+    "/tpa-calc/assets/icons/touch-icon-iphone-retina-180.png": "c22fd3534e47d6a9556926a74d1c0a3a00b743b3",
+    "/tpa-calc/assets/icons/touch-icon-iphone.png": "32dc5c76ff8e1ac2f92ac572e906f4bfd8236538",
     "/tpa-calc/favicon.ico": "19ffb33b66782b34104426118823682b69afa4f8",
-    "/tpa-calc/index.html": "da39f5592119e99e3d66e0e446055fcf028e6e1d",
+    "/tpa-calc/index.html": "68167e7d634ca05fb95b3f16ae35fd2bcf0e96ce",
     "/tpa-calc/main.33f960fc8ceb0b4f21f9.js": "9b2725b050883cad916ff1099ff15fefd6f24ec6",
     "/tpa-calc/manifest.webmanifest": "4e7780983e35e96153220a15bd8d9865f1d8d792",
     "/tpa-calc/polyfills.a4021de53358bb0fec14.js": "b47435a9ef2a4829f2f9dfd35599bde3614981b1",
