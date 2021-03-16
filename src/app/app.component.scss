@@ -1,0 +1,19 @@
+.install-panel {
+   position: fixed;
+   bottom: 0;
+   padding: 1.6rem;
+   background: #f2f2f2;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   transition: all .3s ease-out;
+
+   span {
+      padding: 0.8rem;
+
+      &:hover {
+         border: 1px solid #a4a4a4;
+         border-radius: 5rem;
+      }
+   }
+}

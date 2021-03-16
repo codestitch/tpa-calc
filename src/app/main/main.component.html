@@ -1,0 +1,23 @@
+<tpa-header></tpa-header>
+
+
+<input placeholder="Enter your weight in kgs" type="number" [ngModel]="weight" (ngModelChange)="onChange($event)">
+
+<div class="stat-container">
+   <div class="stat-card">
+      <div class="stat-title">Total Dose</div>
+      <div class="stat-value">{{ service.totalDose$ | async }}</div>
+   </div>
+   <div class="stat-card">
+      <div class="stat-title">Waste</div>
+      <div class="stat-value">{{ service.waste$ | async }}</div>
+   </div>
+   <div class="stat-card">
+      <div class="stat-title">Bolus</div>
+      <div class="stat-value">{{ service.bolus$ | async }}</div>
+   </div>
+   <div class="stat-card">
+      <div class="stat-title">Infusion</div>
+      <div class="stat-value">{{ service.infusion$ | async }}</div>
+   </div>
+</div>

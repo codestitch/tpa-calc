@@ -1,10 +1,15 @@
 import { Component } from '@angular/core';
+import { PwaService } from './core/services/pwa.service';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+   selector: 'tpa-root',
+   templateUrl: './app.component.html',
+   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'tpa-calc';
+   constructor(public pwa: PwaService) {}
+
+   installPwa(): void {
+      this.pwa.promptEvent.prompt();
+   }
 }

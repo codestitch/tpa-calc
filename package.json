@@ -3,12 +3,12 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "s": "ng build --prod && http-server -p 8080 -c-1 dist/tpa-calc",
+    "s": "ng serve",
+    "p": "ng build --prod && http-server -p 8080 -c-1 dist/tpa-calc",
     "pd": "ng build --prod --base-href=/tpa-calc/",
     "deploy": "npx gh-pages -d dist/tpa-calc"
   },

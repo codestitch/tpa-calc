@@ -1,0 +1,33 @@
+:host {
+   padding: 1.6rem 0.8rem;
+   display: flex;
+   flex-direction: row;
+   border-bottom: 1px solid gray;
+   align-items: center;
+   background-color: white;
+
+   .logo {
+      margin-right: 0.6rem;
+
+      img {
+         width: 3.2rem;
+         height: 3.2rem;
+         align-self: center;
+      }
+   }
+
+   .title {
+      display: flex;
+      flex-direction: column;
+
+      h3 {
+         line-height: 2rem;
+         margin: 0;
+      }
+
+      .subtitle {
+         font-size: 0.9rem;
+         color: #868686;
+      }
+   }
+}
