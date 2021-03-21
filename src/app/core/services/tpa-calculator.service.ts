@@ -9,6 +9,7 @@ export class TpaCalculatorService extends BaseService {
    readonly DOSE = 0.9;
    readonly WASTE_MEASURE = 100;
    readonly BOLUS_PERCENTILE = 0.1;
+   readonly LBS_TO_KGS = 2.205;
 
    totalDose$: Observable<string>;
    waste$: Observable<string>;
@@ -43,8 +44,12 @@ export class TpaCalculatorService extends BaseService {
       this._infusion$.next('0');
    }
 
-   getTpa(weight: number): void {
-      const totalDose = weight * this.DOSE;
+   convertFromLbs(lbs: number) {
+      return lbs / this.LBS_TO_KGS;
+   }
+
+   getTpa(kgs: number): void {
+      const totalDose = kgs * this.DOSE;
       const waste = this.WASTE_MEASURE - totalDose;
       const bolus = totalDose * this.BOLUS_PERCENTILE;
       const infusion = totalDose - bolus;
