@@ -1,0 +1,8 @@
+<div ngbDropdown class="dropdown">
+   <button class="btn" ngbDropdownToggle>{{ selected?.label }}</button>
+   <div ngbDropdownMenu>
+      <button *ngFor="let item of items" ngbDropdownItem (click)="onSelect(item)">
+         {{ item.label }}
+      </button>
+   </div>
+</div>

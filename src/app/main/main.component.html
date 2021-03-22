@@ -1,7 +1,9 @@
 <tpa-header></tpa-header>
 
-
-<input placeholder="Enter your weight in kgs" type="number" [ngModel]="weight" (ngModelChange)="onChange($event)">
+<div class="user-input">
+   <tpa-dropdown [items]="weightList" (selectItem)="select($event)"></tpa-dropdown>
+   <input placeholder="Enter your weight in kgs" type="number" [ngModel]="weight" (ngModelChange)="onChange($event)">
+</div>
 
 <div class="stat-container">
    <div class="stat-card">

@@ -1,6 +1,7 @@
 import { BaseService } from './../utility/base-service';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
+import { WeightType } from '../models/weight';
 
 @Injectable({
    providedIn: 'root',
@@ -10,6 +11,8 @@ export class TpaCalculatorService extends BaseService {
    readonly WASTE_MEASURE = 100;
    readonly BOLUS_PERCENTILE = 0.1;
    readonly LBS_TO_KGS = 2.205;
+   readonly MAX_KGS = 99.32;
+   readonly MAX_LBS = 219;
 
    totalDose$: Observable<string>;
    waste$: Observable<string>;
@@ -37,18 +40,33 @@ export class TpaCalculatorService extends BaseService {
       });
    }
 
-   reset() {
-      this._totalDose$.next('0');
-      this._waste$.next('0');
-      this._bolus$.next('0');
-      this._infusion$.next('0');
+   max() {
+      this._totalDose$.next('90');
+      this._waste$.next('10');
+      this._bolus$.next('9');
+      this._infusion$.next('81');
    }
 
-   convertFromLbs(lbs: number) {
+   getWeight(weight: number, unit: WeightType): number {
+      let initialWeight = weight;
+      if (unit === 'lbs') {
+         initialWeight = this.convertFromLbs(initialWeight);
+         return initialWeight;
+      }
+
+      return initialWeight;
+   }
+
+   convertFromLbs(lbs: number): number {
       return lbs / this.LBS_TO_KGS;
    }
 
    getTpa(kgs: number): void {
+      if (kgs > this.MAX_KGS) {
+         this.max();
+         return;
+      }
+
       const totalDose = kgs * this.DOSE;
       const waste = this.WASTE_MEASURE - totalDose;
       const bolus = totalDose * this.BOLUS_PERCENTILE;

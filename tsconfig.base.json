@@ -10,11 +10,11 @@
       "emitDecoratorMetadata": true,
       "experimentalDecorators": true,
       "allowSyntheticDefaultImports": true,
+      "target": "es5",
       "typeRoots": ["node_modules/@types", "node_modules/@angular"],
       "baseUrl": "./",
       "outDir": "./dist",
       "importHelpers": true,
-      "target": "es2015",
       "module": "es2020",
       "lib": ["es2018", "dom"]
    }
