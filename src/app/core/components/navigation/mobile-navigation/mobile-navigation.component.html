@@ -1,0 +1,5 @@
+<ng-container *ngFor="let item of items">
+   <a class="item" [routerLink]="item.path" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+      {{ item.title }}
+   </a>
+</ng-container>
