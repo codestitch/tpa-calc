@@ -1,0 +1,37 @@
+ngb-timepicker {
+   display: flex;
+   justify-content: center;
+}
+
+.infusion-time {
+   .label {
+      font-size: 1.4rem;
+      color: gray;
+   }
+
+   .value {
+      font-weight: bold;
+   }
+}
+
+.time-container {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+
+   .panel {
+      .time-item {
+         display: flex;
+         gap: 1rem;
+         margin: 0.8rem 0;
+
+         .label {
+            color: gray;
+         }
+
+         .value {
+            font-weight: bold;
+         }
+      }
+   }
+}

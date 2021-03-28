@@ -1,1 +1,27 @@
-<p>bolus-time works!</p>
+<ngb-timepicker size="large" [(ngModel)]="time" (ngModelChange)="calculate($event)"></ngb-timepicker>
+
+<div class="infusion-time">
+   <span class="label">Infusion Time:</span>
+   <span class="value"> {{infusionTime}} </span>
+</div>
+
+<div class="time-container">
+   <div class="panel">
+      <div class="time-item" *ngFor="let item of twoHrInterval; let i = index">
+         <span class="label">Phase {{ i + 1}}</span>
+         <span class="value">{{item}}</span>
+      </div>
+   </div>
+   <div class="panel">
+      <div class="time-item" *ngFor="let item of sixHrInterval; let i = index">
+         <span class="label">Phase {{ i + 1}}</span>
+         <span class="value">{{item}}</span>
+      </div>
+   </div>
+   <div class="panel">
+      <div class="time-item" *ngFor="let item of sixteenHrInterval; let i = index">
+         <span class="label">Phase {{ i + 1}}</span>
+         <span class="value">{{item}}</span>
+      </div>
+   </div>
+</div>
