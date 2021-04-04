@@ -9,7 +9,7 @@ export type BolusTime = 2 | 6 | 16;
 @Injectable()
 export class BolusTimeService extends BaseService {
    readonly One_Hour = 60;
-
+   readonly Display_Time_format = 'HH:mm';
 
    constructor() {
       super();
@@ -24,7 +24,7 @@ export class BolusTimeService extends BaseService {
 
       const infusion = time.add(1, 'm');
       return {
-         hour: parseInt(infusion.format('h'), 10),
+         hour: parseInt(infusion.format('HH'), 10),
          minute: parseInt(infusion.format('m'), 10),
          second: parseInt(infusion.format('s'), 10)
       } as NgbTimeStruct;
@@ -36,7 +36,7 @@ export class BolusTimeService extends BaseService {
       }
 
       const time = moment().utc().hours(inputTime?.hour).minutes(inputTime?.minute);
-      return time.format('h:m');
+      return time.format(this.Display_Time_format);
    }
 
    getIntervalTime(infusionTime: NgbTimeStruct, bolusTime: BolusTime) {
@@ -55,7 +55,7 @@ export class BolusTimeService extends BaseService {
       const loopTimes = (this.One_Hour * bolusTime) / timeIntervalRef[bolusTime];
       for (let index = 0; index < loopTimes; index++) {
          const intervalValue = time.add(timeIntervalRef[bolusTime], 'm');
-         timeIntervals = [...timeIntervals, intervalValue.format('h:m')];
+         timeIntervals = [...timeIntervals, intervalValue.format(this.Display_Time_format)];
       }
 
       return timeIntervals;
